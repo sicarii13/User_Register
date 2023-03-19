@@ -1,5 +1,6 @@
 package com.example.userregister
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val userName: EditText = findViewById(R.id.etxtName)
         val userPhone: EditText = findViewById(R.id.etxtPhone)
         val addUser: Button = findViewById(R.id.btnAdd)
+        val viewUsers: Button = findViewById(R.id.btnViewUsers)
 
         addUser.setOnClickListener {
             if(userName.text.isEmpty() || userPhone.text.isEmpty()){
@@ -29,6 +31,10 @@ class MainActivity : AppCompatActivity() {
 
                 Toast.makeText(this@MainActivity, "Data added successfully", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        viewUsers.setOnClickListener {
+            startActivity(Intent(this, UserListing::class.java))
         }
     }
 }

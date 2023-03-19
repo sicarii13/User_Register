@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">User Register</string>
+    <string name="nameHint">Enter full name</string>
+    <string name="phoneHint">Enter phone number</string>
+    <string name="addUser">Add User</string>
+    <string name="viewUsers">View Users</string>
 </resources>

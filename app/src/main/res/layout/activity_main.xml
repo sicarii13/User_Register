@@ -13,25 +13,30 @@
 
         <EditText
             android:id="@+id/etxtName"
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:hint="Enter full name"
+            android:hint="@string/nameHint"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/etxtPhone"
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:hint="Enter phone number"
-            android:importantForAutofill="no"
+            android:hint="@string/phoneHint"
             android:inputType="phone" />
 
         <Button
             android:id="@+id/btnAdd"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Add User" />
+            android:text="@string/addUser" />
+
+        <Button
+            android:id="@+id/btnViewUsers"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/viewUsers" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
