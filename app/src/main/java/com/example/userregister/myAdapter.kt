@@ -1,5 +1,11 @@
 package com.example.userregister
 
+/*
+An Adapter object acts as a bridge between an AdapterView and the underlying data for that view.
+The Adapter provides access to the data items. The Adapter is also responsible for making
+a android.view.View for each item in the data set.
+ */
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
